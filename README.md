@@ -6,8 +6,6 @@
 Найти Разделы с задачами можно по пути:
 `{intensive-tasks}/src/main/java/com/walking/intensive`
 
-По мере сил задачи будут снабжаться тестами, которые позволят самостоятельно убедиться в правильности выполнения.
-
 На данный момент каждая задача предполагает реализацию метода (или методов) в классе Main, расположенном по
 соответствующему задаче пути.
 
@@ -29,9 +27,7 @@
 После этого полученную копию проекта требуется склонировать на свой компьютер.
 Коротко [здесь](https://docs.github.com/ru/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository)
 
-Также вам иногда потребуется актуализировать свою копию, для получения обновлений из оригинального репозитория. О
-необходимости этого действия будут соответствующие объявления в чате. Коротко о
-синхронизации [здесь](https://docs.github.com/ru/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork#syncing-a-fork-branch-from-the-web-ui)
+Коротко о синхронизации [здесь](https://docs.github.com/ru/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork#syncing-a-fork-branch-from-the-web-ui)
 
 ## Алгоритм выполнения и отправки задач на проверку
 
@@ -49,7 +45,7 @@
 6. Создаем Pull Request на ветку `master` в основном репозитории.
    Коротко [здесь](https://docs.github.com/ru/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
 7. При получении замечаний по решению, исправляем их и пушим коммит с правками.
-8. Оповещаем ревьюера, если знаете, кто проверял ваш код
+8. Оповещаем ревьюера
 
 ### Запуск тестов
 
