@@ -13,7 +13,8 @@ public class Task2 {// класс task2
 
     static String getFlatLocation(int floorAmount, int entranceAmount, int flatNumber) { // Метод get...
         if (flatNumber > 16) {
-            String result = " net ";
+            String result = " Такой квартиры нет.";
+            return result;
         }
         if (flatNumber <= 8) {
             entranceAmount = 1;
