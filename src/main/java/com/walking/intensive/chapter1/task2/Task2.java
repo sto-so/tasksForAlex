@@ -5,14 +5,14 @@ public class Task2 {// класс task2
     public static void main(String[] args) { // Метод main
         int floorAmount = 2;
         int entranceAmount = 2;
-        int flatNumber = 20;
+        int flatNumber = 0;
         String result = getFlatLocation(floorAmount, entranceAmount, flatNumber);
         System.out.println(result);
 
     }
 
     static String getFlatLocation(int floorAmount, int entranceAmount, int flatNumber) { // Метод get...
-        if (flatNumber > 16) {
+        if (flatNumber > 16 || flatNumber <= 0) {
             String result = " Такой квартиры нет.";
             return result;
         }
