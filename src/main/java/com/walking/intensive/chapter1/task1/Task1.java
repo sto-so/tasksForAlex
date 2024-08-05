@@ -1,19 +1,34 @@
 package com.walking.intensive.chapter1.task1;
 
+import java.util.Scanner;
+
 /**
  * Условие: <a href="https://geometry-math.ru/homework/Java-age.html">ссылка</a>
  */
 public class Task1 {
     public static void main(String[] args) {
-//        Для собственных проверок можете делать любые изменения в этом методе
-        int age = 0;
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println(getAgeString(age));
+        System.out.print("Сколько вам лет? ");
+        int age = scanner.nextInt();
+
+        String ageWord = getAgeWord(age);
+        System.out.println("Вам " + age + " " + ageWord + ".");
+
+
+        scanner.close();
     }
 
-    static String getAgeString(int age) {
-//        Место для вашего кода
+    private static String getAgeWord(int age) {
+        int lastDigit = age % 10;
+        int lastTwoDigits = age % 100;
 
-        return null; // Заглушка. При реализации - удалить
+        if (lastDigit == 1 && lastTwoDigits != 11) {
+            return "год";
+        } else if ((lastDigit >= 2 && lastDigit <= 4) && (lastTwoDigits < 12 || lastTwoDigits > 14)) {
+            return "года";
+        } else {
+            return "лет";
+        }
     }
 }
