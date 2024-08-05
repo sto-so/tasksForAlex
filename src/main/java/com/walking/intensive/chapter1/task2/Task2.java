@@ -5,7 +5,7 @@ public class Task2 {// класс task2
     public static void main(String[] args) { // Метод main
         int floorAmount = 2;
         int entranceAmount = 2;
-        int flatNumber = 0;
+        int flatNumber = 11;
         String result = getFlatLocation(floorAmount, entranceAmount, flatNumber);
         System.out.println(result);
 
